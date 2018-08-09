@@ -13,6 +13,8 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Storm Viewer"
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
@@ -53,3 +55,5 @@ class ViewController: UITableViewController {
 
 }
 
+//CHANGES TO MAKE:
+//-would be nice to import current weather data + find matching photo! 
